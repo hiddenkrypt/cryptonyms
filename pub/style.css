@@ -6,23 +6,22 @@ body{
 }
 #gameboard{
 	display:table;
-	border: 2px solid yellow;
-	width:100vh;
-	height:80vh;
-    border-spacing: 1vh;
+	width:70vw;
+	height:70vh;
+	border: 1px solid yellow;
+    border-spacing: 2vh;
     border-collapse: separate;
 	margin-left: auto;
 	margin-right: auto;
 }
 .row{
 	display:table-row;
-	height:18%;
+	vertical-align:middle;
 }
 .card{
 	display:table-cell;
 	border: 1px solid #fff;
-	width:18%;
-	height:18%;
 	border-radius:10%;
 	text-align: center;
+	vertical-align:middle;
 }
