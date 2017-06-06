@@ -5,11 +5,40 @@
 		<meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett"/>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="gameboard.css">
 		<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
 		<script src="dom.js"></script>
 		<script src="engine.js"></script>
 	</head>
 	<body>
+		<div id="overlay">
+			<div id="joinGameContainer">
+				<h2>Welcome to <i>Cryptonyms</i></h2>
+				<h3>a <i>Codenames</i> clone.</h3> 
+				This game is under development. Please report any bugs or errors to the Developer.<br>
+				You will need a microphone to play.<br><br>
+				This game is not-for-profit, and intended for private use only. <br>
+				<div id="legal">
+					'<a href="http://czechgames.com/en/codenames/">Codenames</a>' was created by Vlaada Chvátil, and is available at 
+					<a href="https://smile.amazon.com/Czech-Games-00031CGE-Codenames/dp/B014Q1XX9S?sa-no-redirect=1">
+					fine retailers</a> everywhere. 'Codenames: Deep Undercover' is available from 
+					<a href="http://www.target.com/p/codenames-deep-undercover-board-game/-/A-51093096">Target</a>. 
+					This game is in no way endorsed, authorized, or supported by Czech Games, oh god please don't sue me.<br/>
+				</div>
+				<input type=text id="inputName" value='Username'></input><input type=button value='Join game'>
+				<br>
+				<div id="joinError">Failed to join game</div>
+				<br>
+				All source code for this game is available on <a href="https://github.com/hiddenkrypt/cryptonyms">Github</a>.
+			</div>
+			<div id="startGameContainer">
+				Codename options:
+				<div id="codenameOptions"></div>
+				<input type=button value="vote"></input>
+			</div>
+		</div>
 		<div id="gameboard"></div>
+		<div id="chatContainer"></div>
+		
 	</body>	
 </html>
