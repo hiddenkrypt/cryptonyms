@@ -13,7 +13,7 @@
 	</head>
 	<body>
 		<div id="overlay">
-			<div id="joinGameContainer">
+			<div id="joinGameContainer" class="overlayDialog">
 				<h2>Welcome to <i>Cryptonyms</i></h2>
 				<h3>a <i>Codenames</i> clone.</h3> 
 				This game is under development. Please report any bugs or errors to the Developer.<br>
@@ -34,9 +34,19 @@
 				All source code for this game is available on <a href="https://github.com/hiddenkrypt/cryptonyms">Github</a> 
 				and is licensed under the <a href="http://www.wtfpl.net/txt/copying/">WTFPL</a>.
 			</div>
-			<div id="startGameContainer">
-				Codename options:
-				<div id="codenameOptions"></div>
+			<div id="startGameContainer" class="overlayDialog">
+				Player Options:<br><ul>
+					<li><input type=checkbox id=''> Willing to play as Team Captain</li>
+					<li>Team Preference:</li><ul>
+						<li><input type=radio> Gold</li>
+						<li><input type=radio> Purple</li>
+						<li><input type=radio> No Pref</li>
+					</ul></li>
+				</ul>
+				Game options:
+				<div id="codenameOptions">
+						<input type=checkbox> Allow homophones
+				</div><br>
 				<input type=button value="vote"></input>
 			</div>
 		</div>
