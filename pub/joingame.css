@@ -2,19 +2,9 @@
 
 
 #joinGameContainer{
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
+	display:none;
 	width: 50vw;
 	height: 50vh;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: auto;
-	margin-bottom: auto;
-	background-color: rgba(15,15,32,.7);
-	color: #fff;
 	padding: 1em;
 }
 #legal{
@@ -29,4 +19,10 @@
 	font-size: 1.2em;
 	font-weight: bold;
 	visibility:hidden;
+}
+#startGameContainer{
+	/* display:none; */
+	width: 20vw;
+	height: 30vh;
+	padding: 1em;
 }

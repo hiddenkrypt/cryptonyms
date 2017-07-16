@@ -3,8 +3,8 @@
 #gameboard{
 	background-color:#fff;
 	display:table;
-	width:80vw;
-	height:75vh;
+	width:75vw;
+	height:70vh;
 	border: 1px solid #696969;
     border-spacing: 2vh;
     border-collapse: separate;
